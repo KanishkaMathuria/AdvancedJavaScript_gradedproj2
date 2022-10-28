@@ -1,0 +1,33 @@
+body {
+    background-color: grey;
+}
+
+#form {
+    margin: auto;
+    background-color: yellow;
+    padding: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px #ccc;
+}
+
+div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 40px;
+}
+
+input {
+    height: 30px;
+}
+
+#login-button {
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgb(80, 192, 80);
+    border-radius: 5px;
+    margin-left: 45px;
+    height: 30px;
+}
