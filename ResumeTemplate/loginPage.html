@@ -1,28 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Job Portal" />
+    <meta name="keywords" content="Resume, Job, Portal" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="loginPage.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Resume Template</title>
-</head>
-<link rel="stylesheet" href="loginPage.css">
+  <body>
+    <main>
+      <form name="loginForm" class="loginForm">
+        <input
+          type="text"
+          placeholder="User Name"
+          required
+          class="username"
+        /><br />
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          class="password"
+        /><br />
+        <p class="error-message"></p>
+        <input type="submit" value="Login" />
+      </form>
+    </main>
+    <script src="loginPage.js" type="application/javascript"></script>
+    <script type="text/javascript">
+      function preventBack() {
+        window.history.forward();
+      }
 
-<body>
-    <form id="form">
+      setTimeout("preventBack()", 0);
 
-        <div><input placeholder="User Name" id="username" required /></div>
-
-        <div><input placeholder="Password" type="password" id="password" required /></div>
-
-        <div><button type="submit" id="login-button">
-                Login
-            </button></div>
-
-    </form>
-    <script src="loginPage.js"></script>
-</body>
-
+      window.onunload = function () {
+        null;
+      };
+    </script>
+  </body>
 </html>
